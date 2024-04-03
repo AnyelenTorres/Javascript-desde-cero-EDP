@@ -10,15 +10,21 @@
 /* TITULO - NO MODIFICAR*/ document.write('<div class="titulo"><p>Ejercicio de Ejemplo - Resultado:</p></div>')
 // En una tienda, se vendieron 5 camisetas en un día y luego se vendieron otras 3 camisetas. ¿Cuántas camisetas se vendieron en total?
 // Tu codigo 👇:
-    document.write("Se vendieron en total: ")
-    document.write(5+3)
+    document.write("Se vendieron en total ");
+    document.write(5+3); 
+    document.write(" camisetas");
+    ;
 //_________________________________________
 
 /* TITULO - NO MODIFICAR*/ document.write('<br><br><div class="titulo"><p>Ejercicio N° 1 - Promedio del Estudiante | Resultado:</p></div>')
 // Ejercicio N° 1:
 // Un estudiante obtuvo calificaciones de 8, 7 y 9 en tres exámenes respectivamente. ¿Cuál es el promedio de sus calificaciones?
 // Tu codigo 👇:
+notas =(8+7+9)
 
+promedio = notas/3
+ document.write("el promedio es ");
+ document.write(promedio);
 
 //_________________________________________
 
@@ -26,6 +32,10 @@
 // Ejercicio N° 2:
 // Juan quiere saber cuántas letras tiene su nombre. ¿Cuál es la longitud del nombre "Juan"?
 // Tu codigo 👇:
+ 
+let nombre =  "juan";
+const cantidad = nombre.length;
+document.write(`el nombre contiene ${nombre.length}`)
 
 
 //_________________________________________
@@ -35,13 +45,22 @@
 // Si una distancia se mide en metros y se desea conocer su equivalencia en pies, donde 1 metro equivale a 3.281 pies, ¿cuántos pies son 10 metros?
 // Tu codigo 👇:
 
-
+//distanciaEnMetros(mt) = equivalenciaEnPies;
+//3.281 pies= 1 mt
+//x pies    = 10 mt
+const metro = 3.281;
+const pies = metro * 10;
+document.write(`la distancia de 10 metros es ${pies} pies.`)
 //_________________________________________
 
 /* TITULO - NO MODIFICAR*/ document.write('<br><br><div class="titulo"><p>Ejercicio N° 4 - Descuentos | Resultado:</p></div>')
 // Ejercicio N° 4:
 // Un producto tiene un precio original de $100. Si hay un descuento del 20%, ¿cuál es el precio final del producto después del descuento?
 // Tu codigo 👇:
+const precio= 100;
+const descuento = (20*precio)/100;
+const total = precio - descuento;
+document.write("el precio final del producto es de " + total);
 
 
 //_________________________________________
@@ -55,7 +74,8 @@
 // Ejemplo: Lionel Messi -> Bienvenido Lionel Messi 
 // Tu codigo 👇:
 
-
+let nombre1 = prompt("Hola! ¡Cómo es tu nombre?");
+console.log("Bienvenid@  " + nombre1 + "!!")
 //_________________________________________
 
 
