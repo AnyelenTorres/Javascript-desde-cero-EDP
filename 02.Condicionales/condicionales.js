@@ -87,6 +87,16 @@ if (dia==1){
 // el programa debe imprimir un mensaje que indique que el empleado es elegible para una bonificación del 10% de su salario actual.
 // Tu codigo 👇:
 
+let salario = prompt("indique su salario actual");
+let antiguedad = prompt("indique su antiguedad")
+
+if (antiguedad>=5 && salario<500){
+   document.write("Es elegible para una bonificacion del 10% de su salario")
+
+}else{
+        document.write("No recibe ninguna bonificacion")
+}
+
 
 //_________________________________________
 
@@ -98,7 +108,12 @@ if (dia==1){
 // Mayor de 65 años: "Senior"
 // Tu codigo 👇:
 
-
+let edad1= prompt("ingrese su edad");
+if(edad1>=18){
+        document.write("es mayor de edad")
+}else{
+        document.write( "es menor de edad");
+}
 //_________________________________________
 
 
