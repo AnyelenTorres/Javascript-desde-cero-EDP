@@ -4,7 +4,10 @@
 //Debes crear un funcion que retorne un mensaje de bienvenida con nombre y apellido de la persona
 //Ejemplo "Bienvenido Leonardo Avila" -> IMPORTANTE la funcion tiene que llamarse 'bienvenida'
 //Tu código:
+function bienvenida(nombre, apellido){
+    document.write('bienvenid@ ${nombre} ${apellido}');
 
+}
 
 
 /**********************************************************************************/
@@ -12,7 +15,21 @@
 // IMPORTANTE -> la funcion debe llamarse 'calc'
 // Tu código:
 
+function calc(num1,operador,num2){
 
+    switch (operador) {
+        case '+':
+            return num1 + num2;
+        case '-':
+            return num1 - num2;
+        case '*':
+            return num1 * num2;
+        case '/':
+            if (num2 !== 0) {
+                return num1 / num2;
+            }
+        }
+}
 
 /**********************************************************************************/
 // Crea una funcion que en base a la temperaturma maxima, min y porcentaje de lluvia, diga si es necesario salir con abrigo,
@@ -24,6 +41,22 @@
 // ejemplo => max = 20 y porcentaje de lluvia = 70 => devolver "El día está lindo, recomendable un paraguas"
 // IMPORTANTE -> la funcion debe llamarse 'temp'    
 // Tu código:
+
+
+function temp(max,min,lluvia){
+   if (max < 15) {
+    "es recomendable salir con abrigo"
+   }else if (max < 26 && min > 17) {
+    "El dia está lindo"
+    }else if (min >25){
+        "el día está caluroso" 
+    }
+
+    if (lluvia>50){
+        ", recomendable un paragua"
+    }
+
+}
 
 
 

@@ -35,6 +35,9 @@ function sumandoTodo(num){
 // numeros que se recorrio
 // Tu código:👇
 
+for (let i=0; i < num.length; i++){
+ suma +=i ;
+}
 }
 
 function BinarioADecimal(num) {
@@ -42,7 +45,19 @@ function BinarioADecimal(num) {
 // debes tomar este numero binario y ayudandote de un bucle pasarlo a binario
 // tu código:👇
 
+
+
+
 }
+
+
+
+//NO ENTIENDO LO QUE ME PIDE
+
+
+
+
+
 
 function esPrimo(numero) {
 //Escribe un programa que verifique si un número dado es primo o no.
@@ -50,12 +65,18 @@ function esPrimo(numero) {
 //Si el numero pasado es primo devolve: numero " es primo." , caso contrario: numero " no es primo."
 // Tu código:👇
 
+
+
+
+
 }
 
 function invertirCadena(cadena) {
 //La función toma una cadena de texto como parámetro, devuelve la cadena invertida.
 //Ejemplo: 'Hola' -> devolver 'aloH'
 //Tu codigo:👇
+
+
 
 }
   
