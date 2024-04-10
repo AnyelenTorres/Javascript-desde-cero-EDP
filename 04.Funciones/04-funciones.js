@@ -45,15 +45,15 @@ function calc(num1,operador,num2){
 
 function temp(max,min,lluvia){
    if (max < 15) {
-    "es recomendable salir con abrigo"
+   return  "es recomendable salir con abrigo"
    }else if (max < 26 && min > 17) {
-    "El dia está lindo"
+    return "El dia está lindo"
     }else if (min >25){
-        "el día está caluroso" 
+       return  "el día está caluroso" 
     }
 
     if (lluvia>50){
-        ", recomendable un paragua"
+      return  ", recomendable un paragua"
     }
 
 }
@@ -69,9 +69,9 @@ function temp(max,min,lluvia){
 function checkPassword(password){
 
     if(password.lenght ==8){
-        "La contraseña es segura."
+        return "La contraseña es segura."
     }else {
-        "La contraseña es insegura"
+        return "La contraseña es insegura"
     }
 
 }
