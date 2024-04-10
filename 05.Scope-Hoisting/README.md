@@ -59,12 +59,13 @@ var globalVariable = 'Soy global';
 
 function myFunction() {
   var localVariable = 'Soy local';
-  console.log(localVariable);  // ¿Qué imprime? ¿Por qué?
-  console.log(globalVariable); // ¿Qué imprime? ¿Por qué?
+  console.log(localVariable);  // ¿Qué imprime? ¿Por qué? imprime "Soy local", porque esta dentro de su scope
+  console.log(globalVariable); // ¿Qué imprime? ¿Por qué? imprime "Soy global"; porque esta dentro de su scope
+
 }
 
-console.log(localVariable);    // ¿Qué imprime? ¿Por qué?
-console.log(globalVariable);   // ¿Qué imprime? ¿Por qué?
+console.log(localVariable);    // ¿Qué imprime? ¿Por qué? imprime error localVariable is not defined , porque está fuera de su scope.
+console.log(globalVariable);   // ¿Qué imprime? ¿Por qué? imprime:"Soy global porque está dentro de su alcance"
 
 myFunction();
 ```
@@ -79,9 +80,9 @@ myFunction();
 
 ```jsx
 function myFunction() {
-  console.log(myVariable); // ¿Qué imprime? ¿Por qué?
+  console.log(myVariable); // ¿Qué imprime? ¿Por qué?      imprime hola, ya que la variable se sube al inicio de la funcion por el hoisting.
   var myVariable = 'Hola';
-  console.log(myVariable); // ¿Qué imprime? ¿Por qué?
+  console.log(myVariable); // ¿Qué imprime? ¿Por qué?     imprime hola, porque esa es la variabla asignada.
 }
 
 myFunction();
@@ -89,14 +90,14 @@ myFunction();
 
 ```jsx
 
-// Respuesta
+// Respuesta         imprime Hola desde myFunction
 
 ```
 
 ### *`Hoisting de funciones`*
 
 ```jsx
-myFunction(); // ¿Qué sucede al llamar a la función antes de su declaración?
+myFunction(); // ¿Qué sucede al llamar a la función antes de su declaración? hoisting, su sube la declaracion
 
 function myFunction() {
   console.log('Hola desde myFunction');
@@ -105,7 +106,7 @@ function myFunction() {
 
 ```jsx
 
-// Respuesta
+// Respuesta  hoisting, su sube la declaracion e imprime "Hola desde myFunction"
 
 ```
 
@@ -119,14 +120,14 @@ function outerFunction() {
 
   function innerFunction() {
     var innerVariable = 'Interior';
-    console.log(outerVariable); // ¿Qué imprime? ¿Por qué?
-    console.log(innerVariable); // ¿Qué imprime? ¿Por qué?
+    console.log(outerVariable); // ¿Qué imprime? ¿Por qué?       error outerVariable is not defined, porque está fuera de su alcance
+    console.log(innerVariable); // ¿Qué imprime? ¿Por qué?       imprime "Interior" porque está a su alcance.
   }
 
-  innerFunction();
+  innerFunction(); //imprime "Interior"
 }
 
-outerFunction();
+outerFunction(); //imprime "Interior"
 ```
 *`CASO 2:`*
 
@@ -137,8 +138,8 @@ function outerFunction() {
 
   function innerFunction() {
     var innerVariable = 'Interior';
-    console.log(outerVariable); // ¿Qué imprime? ¿Por qué?
-    console.log(innerVariable); // ¿Qué imprime? ¿Por qué?
+    console.log(outerVariable); // ¿Qué imprime? ¿Por qué?    es el mismo ejercicio que el de arriba
+    console.log(innerVariable); // ¿Qué imprime? ¿Por qué?   
   }
 
 }
@@ -149,8 +150,8 @@ outerFunction();
 
 ```jsx
 
-// Respuesta CASO 1:
+// Respuesta CASO 1: Interior 
 
-// Respuesta CASO 2:
+// Respuesta CASO 2: Interior
 
 ```
