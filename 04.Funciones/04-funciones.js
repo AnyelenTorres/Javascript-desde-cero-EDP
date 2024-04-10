@@ -66,7 +66,15 @@ function temp(max,min,lluvia){
 // Si la contraseña contiene 8 caracteres, devolver "La contraseña es segura", en caso contrario devolver "La contraseña es insegura"
 // IMPORTANTE -> la funcion debe llamarse 'checkPassword'
 // Tu código:
+function checkPassword(password){
 
+    if(password.lenght ==8){
+        "La contraseña es segura."
+    }else {
+        "La contraseña es insegura"
+    }
+
+}
 
 
 
@@ -74,6 +82,21 @@ function temp(max,min,lluvia){
 // Crea una función que reciba un string como parámetro y devuelva el mismo string pero con todas las palabras en orden inverso.
 // IMPORTANTE -> la funcion debe llamarse 'stringInverso'
 // Tu código:
+
+function stringInverso(string){
+
+  // Divide el string en palabras utilizando el espacio como separador
+    const palabra = string.split(" ");
+    
+    // Invierte el orden de las palabras
+    const inverso = palabra.reverse();
+    
+    // Une las palabras nuevamente en un solo string
+    const result = inverso.join(" ");
+    
+    return result;
+}
+
 
 
 
