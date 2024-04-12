@@ -1,13 +1,13 @@
 function primerElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el primer elemento
     // tu código:
-
+ return arg.find();
 }
 
 function ultimoElemento(arg){
     //dado el array pasado por parametro, tendras que devolver el ultimo elemento
     // tu código aqui:
-
+    return arg.slice(-1)[0];
 }
 
 function nuevoArray(arg){
