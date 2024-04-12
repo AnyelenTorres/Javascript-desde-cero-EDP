@@ -13,7 +13,7 @@ function ultimoElemento(arg){
 function nuevoArray(arg){
     //dado el array pasado por parametro retorna su longitud
     // tu código aqui:
-
+ return   arg.length();
 }
 
 function changeArray(arr){
