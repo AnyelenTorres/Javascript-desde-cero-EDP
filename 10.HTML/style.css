@@ -1,0 +1,13 @@
+header{
+    background-color: aliceblue;
+}
+body{
+    background-color: rgb(113, 159, 131);
+}
+
+#titulos{
+    color: rgb(196, 179, 223);
+}
+div{
+    list-style: none;
+}
